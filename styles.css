@@ -553,6 +553,14 @@ h5,
     border: 2px solid #e8eaed;
 }
 
+.custom-icon.yolo {
+    background: #0B23A9;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
 /* ======== NEW: Vertical Timeline ======== */
 .timeline {
     position: relative;
@@ -836,23 +844,23 @@ h5,
 }
 
 .avatar-sup {
-    background-image: url('https://ui-avatars.com/api/?name=Dr.+Nathali+de+silva&background=047857&color=fff&size=128');
+    background-image: url('profile-images/Dr.%20Nathali%20de%20Silva.jpeg');
 }
 
 .avatar-1 {
-    background-image: url('https://ui-avatars.com/api/?name=De+Silva&background=10b981&color=fff&size=128');
+    background-image: url('profile-images/De%20Silva%20P%20S.png');
 }
 
 .avatar-2 {
-    background-image: url('https://ui-avatars.com/api/?name=Shavinda&background=8b5cf6&color=fff&size=128');
+    background-image: url('profile-images/Shavinda%20G.M.V.jpeg');
 }
 
 .avatar-3 {
-    background-image: url('https://ui-avatars.com/api/?name=Soori&background=f59e0b&color=fff&size=128');
+    background-image: url('profile-images/Sooriyaarachchi%20N.D.jpeg');
 }
 
 .avatar-4 {
-    background-image: url('https://ui-avatars.com/api/?name=Liyanage&background=ef4444&color=fff&size=128');
+    background-image: url('profile-images/Liyanage%20S.N.png');
 }
 
 .team-member h3 {
