@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEAI – Tea Expert AI Platform</title>
+    <meta name="description"
+        content="TEAI (Tea Expert AI) is an artificial intelligence platform designed to support end-to-end quality assessment in the tea industry.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Devicon & FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">TEAI <span class="accent">.</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#domain">Domain</a></li>
+                <li><a href="#milestones">Milestones</a></li>
+                <li><a href="#documents">Documents</a></li>
+                <li><a href="#presentations">Presentations</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Intelligent Tea Quality Assessment Platform</h1>
+            <p>TEAI (Tea Expert AI) is a multi-module artificial intelligence platform supporting end-to-end quality
+                assessment and decision-making. We replicate and enhance human expertise in tea production using
+                advanced ML and Computer Vision.</p>
+            <a href="#domain" class="btn primary-btn">Explore Research</a>
+        </div>
+        <div class="hero-image-container">
+            <div class="glass-card mockup-card">
+                <img src="file:///Users/fonotechnologies/.gemini/antigravity/brain/b098224d-4615-44c9-972b-910601d6ebe5/tea_ai_analysis_1776856376338.png"
+                    alt="Tea Leaves AI Analysis" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Domain Section -->
+    <section id="domain" class="section">
+        <div class="container">
+
+            <!-- Research Gap Section -->
+            <div class="domain-subsection">
+                <h3 class="section-title">Research Gap</h3>
+                <div class="gap-grid">
+                    <div class="ref-card interactive-card" data-popup-title="Human Dependency & Subjective Evaluation"
+                        data-popup-desc="Most tea quality assessments rely on expert tea tasters, making the process subjective, inconsistent, and difficult to scale across large production environments. <br><br><b>Gap:</b> Lack of intelligent systems that replicate human-like descriptive evaluation while ensuring consistency.">
+                        <div class="ref-card-header">
+                            <span class="gap-num">1</span>
+                            <h4>Human Dependency & Subjective Evaluation</h4>
+                        </div>
+                        <p class="ref-card-desc">Most tea quality assessments rely on expert tea tasters, making the
+                            process subjective, inconsistent, and difficult to scale across large production
+                            environments.</p>
+                        <div class="gap-callout">
+                            <span class="gap-emoji">🧠</span>
+                            <span class="gap-badge">Gap:</span>
+                            <span>Lack of intelligent systems that replicate human-like descriptive evaluation while
+                                ensuring consistency.</span>
+                        </div>
+                    </div>
+                    <div class="ref-card interactive-card" data-popup-title="Limited Descriptive Intelligence"
+                        data-popup-desc="Existing computer vision models mainly focus on classification (e.g., grades) rather than generating rich, human-like descriptive outputs used in real tea tasting. <br><br><b>Gap:</b> Absence of AI systems capable of producing adjective-based sensory descriptions similar to expert tasters.">
+                        <div class="ref-card-header">
+                            <span class="gap-num">2</span>
+                            <h4>Limited Descriptive Intelligence</h4>
+                        </div>
+                        <p class="ref-card-desc">Existing computer vision models mainly focus on classification (e.g.,
+                            grades) rather than generating rich, human-like descriptive outputs used in real tea
+                            tasting.</p>
+                        <div class="gap-callout">
+                            <span class="gap-emoji">📸</span>
+                            <span class="gap-badge">Gap:</span>
+                            <span>Absence of AI systems capable of producing adjective-based sensory descriptions
+                                similar to expert tasters.</span>
+                        </div>
+                    </div>
+                    <div class="ref-card interactive-card" data-popup-title="Lack of Adaptive Feedback Learning"
+                        data-popup-desc="Current AI models are mostly static and do not improve based on real expert corrections or preferences over time. <br><br><b>Gap:</b> No reinforcement learning-based systems that continuously adapt using human-in-the-loop feedback.">
+                        <div class="ref-card-header">
+                            <span class="gap-num">3</span>
+                            <h4>Lack of Adaptive Feedback Learning</h4>
+                        </div>
+                        <p class="ref-card-desc">Current AI models are mostly static and do not improve based on real
+                            expert corrections or preferences over time.</p>
+                        <div class="gap-callout">
+                            <span class="gap-emoji">🔄</span>
+                            <span class="gap-badge">Gap:</span>
+                            <span>No reinforcement learning-based systems that continuously adapt using
+                                human-in-the-loop feedback.</span>
+                        </div>
+                    </div>
+                    <div class="ref-card interactive-card" data-popup-title="Inefficient Plucking Quality Assessment"
+                        data-popup-desc="Manual inspection of plucking quality is time-consuming and not scalable for high-volume industrial operations. <br><br><b>Gap:</b> Limited real-time systems capable of detecting computing leaf-bud combinations in conveyor environments.">
+                        <div class="ref-card-header">
+                            <span class="gap-num">4</span>
+                            <h4>Inefficient Plucking Quality Assessment</h4>
+                        </div>
+                        <p class="ref-card-desc">Manual inspection of plucking quality is time-consuming and not
+                            scalable for high-volume industrial operations.</p>
+                        <div class="gap-callout">
+                            <span class="gap-emoji">🌿</span>
+                            <span class="gap-badge">Gap:</span>
+                            <span>Limited real-time systems capable of detecting computing leaf-bud combinations in
+                                conveyor environments.</span>
+                        </div>
+                    </div>
+                    <div class="ref-card interactive-card" data-popup-title="Lack of Predictive Withering"
+                        data-popup-desc="Traditional withering relies on manual judgment or simple measurements like weight loss, without leveraging predictive analytics. <br><br><b>Gap:</b> Absence of integrated models combining image data and environmental factors to predict moisture levels.">
+                        <div class="ref-card-header">
+                            <span class="gap-num">5</span>
+                            <h4>Lack of Predictive Withering</h4>
+                        </div>
+                        <p class="ref-card-desc">Traditional withering relies on manual judgment or simple measurements
+                            like weight loss, without leveraging predictive analytics.</p>
+                        <div class="gap-callout">
+                            <span class="gap-emoji">🌡️</span>
+                            <span class="gap-badge">Gap:</span>
+                            <span>Absence of integrated models combining image data and environmental factors to predict
+                                moisture levels.</span>
+                        </div>
+                    </div>
+                    <div class="ref-card interactive-card" data-popup-title="Incomplete Integration of Market & Safety"
+                        data-popup-desc="Existing solutions treat pricing, quality assessment, and contamination detection as separate processes. <br><br><b>Gap:</b> Lack of a unified system that combines auction price prediction, quality insights, and safety monitoring.">
+                        <div class="ref-card-header">
+                            <span class="gap-num">6</span>
+                            <h4>Incomplete Integration of Market & Safety</h4>
+                        </div>
+                        <p class="ref-card-desc">Existing solutions treat pricing, quality assessment, and contamination
+                            detection as separate processes.</p>
+                        <div class="gap-callout">
+                            <span class="gap-emoji">📊</span>
+                            <span class="gap-badge">Gap:</span>
+                            <span>Lack of a unified system that combines auction price prediction, quality insights, and
+                                safety monitoring.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research Problem & Focus Areas Container -->
+            <div class="problem-container">
+                <h3 class="section-title">Research Problem</h3>
+
+                <div class="icon-circle">🧠</div>
+                <h4 class="challenge-title">Core Research Challenge</h4>
+                <p class="challenge-desc">How can we design an integrated, automated, and adaptive system that
+                    standardizes tea quality evaluation, optimizes production processes, and enhances safety across the
+                    industry?</p>
+
+                <div class="challenge-cards">
+                    <div class="ref-card small-card">
+                        <div class="card-icon">👁️</div>
+                        <div>
+                            <h5>Subjective Quality Evaluation</h5>
+                            <p>Manual tasting leads to inconsistency</p>
+                        </div>
+                    </div>
+                    <div class="ref-card small-card">
+                        <div class="card-icon">⚙️</div>
+                        <div>
+                            <h5>Production Inefficiency</h5>
+                            <p>Difficulty scaling across large volumes</p>
+                        </div>
+                    </div>
+                    <div class="ref-card small-card">
+                        <div class="card-icon">⚠️</div>
+                        <div>
+                            <h5>Safety & Degradation Risks</h5>
+                            <p>Lack of real-time contamination detection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="focus-section">
+                    <div class="focus-title-wrapper">
+                        <span class="focus-icon">🎯</span>
+                        <h4>Research Focus Areas</h4>
+                    </div>
+
+                    <div class="focus-grid">
+                        <div class="ref-card">
+                            <div class="focus-header">
+                                <div class="card-icon">👁️</div>
+                                <div>
+                                    <h5>Intelligent Visual Quality Assessment</h5>
+                                    <p>Advanced CV to replicate human-like tea evaluation.</p>
+                                </div>
+                            </div>
+                            <ul class="styled-list">
+                                <li>Leaf colour and brightness analysis</li>
+                                <li>Texture, twist, and structure detection</li>
+                                <li>Adjective-based description generation</li>
+                            </ul>
+                        </div>
+
+                        <div class="ref-card">
+                            <div class="focus-header">
+                                <div class="card-icon">🔄</div>
+                                <div>
+                                    <h5>Adaptive Learning with Feedback</h5>
+                                    <p>Continuous system improvement via RL guiding.</p>
+                                </div>
+                            </div>
+                            <ul class="styled-list">
+                                <li>Human-in-the-loop feedback integration</li>
+                                <li>Reward-based learning mechanism</li>
+                                <li>Model adaptation to expert preferences</li>
+                            </ul>
+                        </div>
+
+                        <div class="ref-card">
+                            <div class="focus-header">
+                                <div class="card-icon">🌿</div>
+                                <div>
+                                    <h5>Automated Plucking Evaluation</h5>
+                                    <p>Real-time detection and classification of standards.</p>
+                                </div>
+                            </div>
+                            <ul class="styled-list">
+                                <li>Leaf and bud detection (2 leaves + 1 bud)</li>
+                                <li>Conveyor-based real-time grading</li>
+                                <li>Batch-level quality reporting</li>
+                            </ul>
+                        </div>
+
+                        <div class="ref-card">
+                            <div class="focus-header">
+                                <div class="card-icon">🌡️</div>
+                                <div>
+                                    <h5>Smart Withering Optimization</h5>
+                                    <p>Monitoring and prediction of moisture content.</p>
+                                </div>
+                            </div>
+                            <ul class="styled-list">
+                                <li>Image-based leaf condition analysis</li>
+                                <li>Weight loss tracking & Env. factors</li>
+                                <li>Optimal withering time prediction</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research Objectives -->
+            <div class="domain-subsection">
+                <h3 class="section-title">Research Objectives</h3>
+                <div class="stacked-cards">
+                    <div class="ref-card wide-card">
+                        <h4 class="objective-title">Design & Develop an Intelligent Tea Quality Assessment Platform</h4>
+                        <p>Create an integrated AI-based system that combines computer vision, machine learning, and IoT
+                            to enhance tea quality evaluation and industrial decision-making.</p>
+                    </div>
+                    <div class="ref-card wide-card">
+                        <h4 class="objective-title">Replicate Human Tea Tasting Using AI & Enable Continuous Learning
+                        </h4>
+                        <p>Develop a vision-based model capable of analyzing tea appearance, generating human-like
+                            descriptive feedback, and adapting via RL based on professional corrections.</p>
+                    </div>
+                    <div class="ref-card wide-card">
+                        <h4 class="objective-title">Automate Plucking Quality Evaluation</h4>
+                        <p>Design a real-time grading system that identifies leaf/bud combos and classifies plucking
+                            quality into standard categories directly from the conveyor.</p>
+                    </div>
+                    <div class="ref-card wide-card">
+                        <h4 class="objective-title">Predict & Optimize Withering Conditions</h4>
+                        <p>Build intelligent models to estimate moisture content and recommend optimal withering
+                            durations based on environmental and visual data.</p>
+                    </div>
+                    <div class="ref-card wide-card">
+                        <h4 class="objective-title">Forecast Prices & Ensure Product Safety</h4>
+                        <p>Develop predictive models to estimate market prices using historical data, while concurrently
+                            implementing real-time systems to detect foreign particles in production.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Methodology -->
+            <div class="domain-subsection">
+                <h3 class="section-title">Methodology</h3>
+                <div class="stacked-cards">
+                    <div class="ref-card wide-card">
+                        <div class="methodology-header">
+                            <div class="method-num">1</div>
+                            <h4 class="method-title">Requirements Analysis</h4>
+                        </div>
+                        <ul class="method-list">
+                            <li>Problem Definition in Tea Industry Automation</li>
+                            <li>Stakeholder Identification & Dataset Identification</li>
+                            <li>Literature Survey & Gap Analysis</li>
+                        </ul>
+                    </div>
+                    <div class="ref-card wide-card">
+                        <div class="methodology-header">
+                            <div class="method-num">2</div>
+                            <h4 class="method-title">System Architecture & Design</h4>
+                        </div>
+                        <ul class="method-list">
+                            <li>Overall TEAI Modular Platform Architecture</li>
+                            <li>API-based Backend Design (FastAPI)</li>
+                            <li>UI/UX Wireframes and Navigation Flow</li>
+                        </ul>
+                    </div>
+                    <div class="ref-card wide-card">
+                        <div class="methodology-header">
+                            <div class="method-num">3</div>
+                            <h4 class="method-title">Model Development</h4>
+                        </div>
+                        <ul class="method-list">
+                            <li>Feature Engineering (Color, Texture, Moisture, Market Factors)</li>
+                            <li>Model Training (CNN/YOLO, Regression, Reinforcement Learning)</li>
+                        </ul>
+                    </div>
+                    <div class="ref-card wide-card">
+                        <div class="methodology-header">
+                            <div class="method-num">4</div>
+                            <h4 class="method-title">Integration & Testing</h4>
+                        </div>
+                        <ul class="method-list">
+                            <li>RESTful API Development and IoT Arduino mapping</li>
+                            <li>Unit Testing (Component) & Integration Testing (E2E)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technologies -->
+            <div class="domain-subsection">
+                <h3 class="section-title">Technologies Used</h3>
+                <div class="tech-grid">
+                    <div class="tech-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    <div class="tech-item"><i class="devicon-react-original colored"></i><span>React</span></div>
+                    <div class="tech-item"><i class="devicon-nodejs-plain colored"></i><span>Node</span></div>
+                    <div class="tech-item"><i class="devicon-tensorflow-original colored"></i><span>TensorFlow</span>
+                    </div>
+                    <div class="tech-item"><i class="devicon-flask-original colored"></i><span>Flask</span></div>
+                    <div class="tech-item">
+                        <div class="custom-icon keras">K</div><span>Keras</span>
+                    </div>
+                    <div class="tech-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+                    <div class="tech-item"><i class="devicon-opencv-plain colored"></i><span>OpenCV</span></div>
+                    <div class="tech-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                    <div class="tech-item"><i class="devicon-numpy-original colored"></i><span>NumPy</span></div>
+                    <div class="tech-item"><i class="devicon-pandas-original colored"></i><span>Pandas</span></div>
+                    <div class="tech-item">
+                        <div class="custom-icon colab">CO</div><span>Google Colab</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Milestones Section (Vertical Timeline) -->
+    <section id="milestones" class="section alt-bg">
+        <div class="container">
+            <div class="section-tag">Project Timeline</div>
+            <h2 class="section-title" style="margin-bottom: 1rem;">Research Milestones</h2>
+            <p class="section-subtitle">Track the progress of our research project through key assessment points and
+                deliverables.</p>
+
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-meta">
+                        <div class="timeline-date">March 2025</div>
+                        <div class="status-badge">Completed</div>
+                    </div>
+                    <div class="timeline-node"></div>
+                    <div class="ref-card timeline-card">
+                        <h4 class="objective-title">TAF Presentation</h4>
+                        <p>Topic Assessment Form presentation to finalize the research topic and scope.</p>
+                        <p class="timeline-marks">Marks: 10%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-meta">
+                        <div class="timeline-date">March 2025</div>
+                        <div class="status-badge">Completed</div>
+                    </div>
+                    <div class="timeline-node"></div>
+                    <div class="ref-card timeline-card">
+                        <h4 class="objective-title">Project Proposal</h4>
+                        <p>Initial research proposal outlining objectives, methodology, and expected outcomes.</p>
+                        <p class="timeline-marks">Marks: 15%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-meta">
+                        <div class="timeline-date">April 2025</div>
+                        <div class="status-badge">Completed</div>
+                    </div>
+                    <div class="timeline-node"></div>
+                    <div class="ref-card timeline-card">
+                        <h4 class="objective-title">Progress Presentation I</h4>
+                        <p>First progress review covering literature survey and preliminary findings.</p>
+                        <p class="timeline-marks">Marks: 20%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-meta">
+                        <div class="timeline-date">May 2025</div>
+                        <div class="status-badge">Completed</div>
+                    </div>
+                    <div class="timeline-node"></div>
+                    <div class="ref-card timeline-card">
+                        <h4 class="objective-title">Progress Presentation II</h4>
+                        <p>Second progress review with data collection results and analysis.</p>
+                        <p class="timeline-marks">Marks: 25%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-meta">
+                        <div class="timeline-date">June 2025</div>
+                        <div class="status-badge">Completed</div>
+                    </div>
+                    <div class="timeline-node"></div>
+                    <div class="ref-card timeline-card">
+                        <h4 class="objective-title">Research Paper</h4>
+                        <p>Submission of the final research paper detailing the project, findings, and conclusions.</p>
+                        <p class="timeline-marks">Marks: N/A</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-meta">
+                        <div class="timeline-date">June 2025</div>
+                        <div class="status-badge">Completed</div>
+                    </div>
+                    <div class="timeline-node"></div>
+                    <div class="ref-card timeline-card">
+                        <h4 class="objective-title">Final Report</h4>
+                        <p>Submission of the comprehensive final report document.</p>
+                        <p class="timeline-marks">Marks: N/A</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-meta">
+                        <div class="timeline-date">June 2025</div>
+                        <div class="status-badge">Completed</div>
+                    </div>
+                    <div class="timeline-node"></div>
+                    <div class="ref-card timeline-card">
+                        <h4 class="objective-title">Website Assessment</h4>
+                        <p>Assessment of the research project website.</p>
+                        <p class="timeline-marks">Marks: N/A</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-meta">
+                        <div class="timeline-date">July 2025</div>
+                        <div class="status-badge">Completed</div>
+                    </div>
+                    <div class="timeline-node"></div>
+                    <div class="ref-card timeline-card">
+                        <h4 class="objective-title">Final Presentation & Viva</h4>
+                        <p>Final presentation and oral defense of the research findings and project.</p>
+                        <p class="timeline-marks">Marks: 40%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-meta">
+                        <div class="timeline-date">Ongoing</div>
+                        <div class="status-badge">Completed</div>
+                    </div>
+                    <div class="timeline-node"></div>
+                    <div class="ref-card timeline-card">
+                        <h4 class="objective-title">Logbook</h4>
+                        <p>Maintain a detailed logbook documenting research activities and progress.</p>
+                        <p class="timeline-marks">Marks: N/A</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section id="documents" class="section">
+        <div class="container">
+            <div class="section-tag-gold">Documentation</div>
+            <h2 class="section-title" style="margin-bottom: 1rem;">Project Documents</h2>
+            <p class="section-subtitle">Access all research documents, reports, and supporting materials for this
+                project.</p>
+
+            <div class="documents-stacked">
+                <div class="ref-card doc-wrapper">
+                    <div class="doc-header">
+                        <div class="doc-title-area">
+                            <i class="fa-regular fa-file-lines fa-xl doc-icon"></i>
+                            <div>
+                                <h4 class="doc-title">TAF Document</h4>
+                                <p class="doc-desc">Topic Assessment Form for Research Project</p>
+                            </div>
+                        </div>
+                        <div class="status-badge style-dark">Available</div>
+                    </div>
+                    <div class="doc-file-box">
+                        <div class="file-info">
+                            <span class="file-name">Topic Assessment Form.pdf</span>
+                            <span class="file-size">1.5 MB</span>
+                        </div>
+                        <a href="#" class="btn file-view-btn"><i class="fa-regular fa-eye"></i> View</a>
+                    </div>
+                </div>
+
+                <div class="ref-card doc-wrapper">
+                    <div class="doc-header">
+                        <div class="doc-title-area">
+                            <i class="fa-regular fa-file-lines fa-xl doc-icon"></i>
+                            <div>
+                                <h4 class="doc-title">Proposal Documents</h4>
+                                <p class="doc-desc">Research proposal documents outlining the full architecture</p>
+                            </div>
+                        </div>
+                        <div class="status-badge style-dark">Available</div>
+                    </div>
+                    <div class="doc-file-group">
+                        <div class="doc-file-box">
+                            <div class="file-info">
+                                <span class="file-name">Proposal Document - TEAI Full.pdf</span>
+                                <span class="file-size">2.1 MB</span>
+                            </div>
+                            <a href="#" class="btn file-view-btn"><i class="fa-regular fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ref-card doc-wrapper">
+                    <div class="doc-header">
+                        <div class="doc-title-area">
+                            <i class="fa-regular fa-file-lines fa-xl doc-icon"></i>
+                            <div>
+                                <h4 class="doc-title">Checklist Documents</h4>
+                                <p class="doc-desc">Standard checklist items covered entirely.</p>
+                            </div>
+                        </div>
+                        <div class="status-badge style-dark">Available</div>
+                    </div>
+                    <div class="doc-file-box">
+                        <div class="file-info">
+                            <span class="file-name">Research Checklist.pdf</span>
+                            <span class="file-size">450 KB</span>
+                        </div>
+                        <a href="#" class="btn file-view-btn"><i class="fa-regular fa-eye"></i> View</a>
+                    </div>
+                </div>
+
+                <div class="ref-card doc-wrapper">
+                    <div class="doc-header">
+                        <div class="doc-title-area">
+                            <i class="fa-regular fa-file-lines fa-xl doc-icon"></i>
+                            <div>
+                                <h4 class="doc-title">Final Reports</h4>
+                                <p class="doc-desc">Submission of comprehensive reporting document.</p>
+                            </div>
+                        </div>
+                        <div class="status-badge style-dark">Available</div>
+                    </div>
+                    <div class="doc-file-box">
+                        <div class="file-info">
+                            <span class="file-name">TEAI Final Project Report.pdf</span>
+                            <span class="file-size">5.2 MB</span>
+                        </div>
+                        <a href="#" class="btn file-view-btn"><i class="fa-regular fa-eye"></i> View</a>
+                    </div>
+                </div>
+
+                <div class="ref-card doc-wrapper">
+                    <div class="doc-header">
+                        <div class="doc-title-area">
+                            <i class="fa-regular fa-file-lines fa-xl doc-icon"></i>
+                            <div>
+                                <h4 class="doc-title">Research Paper</h4>
+                                <p class="doc-desc">Scientific document detailing the implementations.</p>
+                            </div>
+                        </div>
+                        <div class="status-badge style-dark">Available</div>
+                    </div>
+                    <div class="doc-file-box">
+                        <div class="file-info">
+                            <span class="file-name">TEAI Research Paper.pdf</span>
+                            <span class="file-size">1.8 MB</span>
+                        </div>
+                        <a href="#" class="btn file-view-btn"><i class="fa-regular fa-eye"></i> View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presentations Section -->
+    <section id="presentations" class="section alt-bg">
+        <div class="container">
+            <div class="section-tag-purple">Presentations</div>
+            <h2 class="section-title" style="margin-bottom: 1rem;">Research Presentations</h2>
+            <p class="section-subtitle" style="margin-bottom: 4rem;">View slides and materials from past research
+                presentations.</p>
+
+            <div class="presentation-grid">
+                <div class="ref-card presentation-card">
+                    <div class="pres-header">
+                        <i class="fa-solid fa-desktop pres-icon"></i>
+                        <span class="status-badge style-dark">Completed</span>
+                    </div>
+                    <h4 class="objective-title">Proposal Presentation</h4>
+                    <p class="pres-meta">March 15, 2025 &bull; 25 slides &bull; 20 minutes</p>
+                    <p class="pres-desc">Initial project proposal and research methodology overview</p>
+                    <a href="#" class="btn black-sub-btn"><i class="fa-solid fa-download"></i> View Slides</a>
+                </div>
+
+                <div class="ref-card presentation-card">
+                    <div class="pres-header">
+                        <i class="fa-solid fa-desktop pres-icon"></i>
+                        <span class="status-badge style-dark">Completed</span>
+                    </div>
+                    <h4 class="objective-title">Progress Presentation 1</h4>
+                    <p class="pres-meta">April 20, 2025 &bull; 30 slides &bull; 25 minutes</p>
+                    <p class="pres-desc">Literature review findings and preliminary data collection</p>
+                    <a href="#" class="btn black-sub-btn"><i class="fa-solid fa-download"></i> View Slides</a>
+                </div>
+
+                <div class="ref-card presentation-card">
+                    <div class="pres-header">
+                        <i class="fa-solid fa-desktop pres-icon"></i>
+                        <span class="status-badge style-dark">Completed</span>
+                    </div>
+                    <h4 class="objective-title">Progress Presentation 2</h4>
+                    <p class="pres-meta">May 25, 2025 &bull; 35 slides &bull; 30 minutes</p>
+                    <p class="pres-desc">Data analysis results and initial findings discussion</p>
+                    <a href="#" class="btn black-sub-btn"><i class="fa-solid fa-download"></i> View Slides</a>
+                </div>
+
+                <div class="ref-card presentation-card">
+                    <div class="pres-header">
+                        <i class="fa-solid fa-desktop pres-icon"></i>
+                        <span class="status-badge style-dark">Completed</span>
+                    </div>
+                    <h4 class="objective-title">Final Presentation</h4>
+                    <p class="pres-meta">June 30, 2025 &bull; 40 slides &bull; 35 minutes</p>
+                    <p class="pres-desc">Complete research findings, conclusions, and recommendations</p>
+                    <a href="#" class="btn black-sub-btn"><i class="fa-solid fa-download"></i> View Slides</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <div class="container" style="background:#f0fdf4; padding-bottom:5rem; border-radius:24px;">
+            <div style="padding-top: 4rem;">
+                <div class="section-tag-about">Research Team</div>
+                <h2 class="section-title" style="margin-bottom: 1rem;">About Us</h2>
+                <p class="section-subtitle" style="margin-bottom: 3rem;">Meet the dedicated research team working on
+                    automating tea quality with AI.</p>
+
+                <!-- Supervisor (1 Card Center) -->
+                <div class="team-grid supervisor-row">
+                    <div class="ref-card team-member">
+                        <div class="avatar avatar-sup"></div>
+                        <h3>Dr. Nathali de Silva</h3>
+                        <p class="role">Supervisor</p>
+                        <p class="school">Faculty of Computing | Information Technology</p>
+                        <div class="team-links">
+                            <a href="#"><i class="fa-regular fa-envelope"></i> Email</a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 Members Grid -->
+                <div class="team-grid members-row mt-4">
+                    <div class="ref-card team-member">
+                        <div class="avatar avatar-1"></div>
+                        <h3>De Silva P.S</h3>
+                        <p class="role">Vision-Based Tea Taster</p>
+                        <p class="id">IT22223326</p>
+                        <div class="team-links">
+                            <a href="#"><i class="fa-regular fa-envelope"></i> Email</a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="ref-card team-member">
+                        <div class="avatar avatar-2"></div>
+                        <h3>Shavinda G.M.V</h3>
+                        <p class="role">Plucking Quality Grading</p>
+                        <p class="id">IT22224248</p>
+                        <div class="team-links">
+                            <a href="#"><i class="fa-regular fa-envelope"></i> Email</a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="ref-card team-member">
+                        <div class="avatar avatar-3"></div>
+                        <h3>Sooriyaarachchi N.D</h3>
+                        <p class="role">Withering Moisture Time</p>
+                        <p class="id">IT22254702</p>
+                        <div class="team-links">
+                            <a href="#"><i class="fa-regular fa-envelope"></i> Email</a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="ref-card team-member">
+                        <div class="avatar avatar-4"></div>
+                        <h3>Liyanage S.N</h3>
+                        <p class="role">Auction Price & Particles</p>
+                        <p class="id">IT22211996</p>
+                        <div class="team-links">
+                            <a href="#"><i class="fa-regular fa-envelope"></i> Email</a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="ref-card contact-info">
+                    <h3>Get In Touch</h3>
+                    <p style="margin-bottom:2rem;color:#475569;">Have questions about the TEAI platform? Reach out to
+                        us!</p>
+                    <ul class="contact-details">
+                        <li><i class="fa-solid fa-phone"></i> +94 11 234 5678</li>
+                        <li><i class="fa-solid fa-envelope"></i> contact@teai.lk</li>
+                        <li><i class="fa-solid fa-location-dot"></i> SLIIT Malabe Campus</li>
+                    </ul>
+                </div>
+                <form class="ref-card contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 TEAI Project Team. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive JS Modal Popup -->
+    <div id="infoModal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header">
+                <i class="fa-solid fa-leaf modal-icon"></i>
+                <h3 id="modalTitle">Modal Title</h3>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="modalDesc">Modal Description goes here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
