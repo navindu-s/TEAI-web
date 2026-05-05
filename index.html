@@ -13,9 +13,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23166534'/><text y='72' x='50' text-anchor='middle' font-size='52' font-weight='700' font-family='Inter,sans-serif' fill='white'>TE</text><text y='92' x='50' text-anchor='middle' font-size='22' font-weight='600' font-family='Inter,sans-serif' fill='%236ee7b7'>AI</text></svg>">
 </head>
 
 <body>
+    <!-- Scroll Progress Bar -->
+    <div id="scrollProgress"></div>
     <!-- Navigation -->
     <header class="navbar">
         <div class="logo">TEAI <span class="accent">.</span></div>
@@ -40,15 +44,18 @@
     <!-- Home Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Intelligent Tea Quality Assessment Platform</h1>
+            <h1><span id="typingText"></span><span class="typing-cursor">|</span></h1>
             <p>TEAI (Tea Expert AI) is a multi-module artificial intelligence platform supporting end-to-end quality
                 assessment and decision-making. We replicate and enhance human expertise in tea production using
                 advanced ML and Computer Vision.</p>
-            <a href="#domain" class="btn primary-btn">Explore Research</a>
+            <div class="hero-actions">
+                <a href="#domain" class="btn primary-btn">Explore Research</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fteai-research.com" target="_blank" rel="noopener" class="btn share-btn"><i class="fa-brands fa-linkedin"></i> Share on LinkedIn</a>
+            </div>
         </div>
         <div class="hero-image-container">
             <div class="glass-card mockup-card">
-                <img src="/web-images/home.png"
+                <img src="web-images/hero_tea_ai.png"
                     alt="Tea Leaves AI Analysis" class="hero-image">
             </div>
         </div>
@@ -352,13 +359,19 @@
                     <div class="tech-item"><i class="devicon-nodejs-plain colored"></i><span>Node</span></div>
                     <div class="tech-item"><i class="devicon-tensorflow-original colored"></i><span>TensorFlow</span>
                     </div>
-                    <div class="tech-item"><i class="devicon-flask-original colored"></i><span>Flask</span></div>
+                    <div class="tech-item">
+                        <div class="custom-icon fastapi">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:46px;height:46px;fill:white;"><path d="M12 .0387C5.3729.0384.0003 5.3931 0 11.9988c-.001 6.6066 5.372 11.9628 12 11.9625 6.628.0003 12.001-5.3559 12-11.9625-.0003-6.6057-5.3729-11.9604-12-11.96m-.829 5.4153h7.55l-7.5805 5.3284h5.1828L5.279 18.5436q2.9466-6.5444 5.892-13.0896"/></svg>
+                        </div><span>FastAPI</span>
+                    </div>
                     <div class="tech-item">
                         <div class="custom-icon keras">K</div><span>Keras</span>
                     </div>
-                    <div class="tech-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+                    <div class="tech-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
                     <div class="tech-item"><i class="devicon-opencv-plain colored"></i><span>OpenCV</span></div>
-                    <div class="tech-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                    <div class="tech-item">
+                        <div class="custom-icon cnn">CNN</div><span>CNN</span>
+                    </div>
                     <div class="tech-item"><i class="devicon-numpy-original colored"></i><span>NumPy</span></div>
                     <div class="tech-item"><i class="devicon-pandas-original colored"></i><span>Pandas</span></div>
                     <div class="tech-item">
@@ -378,118 +391,116 @@
         <div class="container">
             <div class="section-tag">Project Timeline</div>
             <h2 class="section-title" style="margin-bottom: 1rem;">Research Milestones</h2>
-            <p class="section-subtitle">Track the progress of our research project through key assessment points and
-                deliverables.</p>
+            <p class="section-subtitle">Track the progress of our research project through key assessment points and deliverables.</p>
 
             <div class="timeline">
                 <div class="timeline-item left">
                     <div class="timeline-meta">
-                        <div class="timeline-date">March 2025</div>
+                        <div class="timeline-date">15th July 2024</div>
                         <div class="status-badge">Completed</div>
                     </div>
                     <div class="timeline-node"></div>
                     <div class="ref-card timeline-card">
                         <h4 class="objective-title">TAF Presentation</h4>
                         <p>Topic Assessment Form presentation to finalize the research topic and scope.</p>
-                        <p class="timeline-marks">Marks: 10%</p>
+                        <p class="timeline-marks">Marks: N/A</p>
                     </div>
                 </div>
 
                 <div class="timeline-item right">
                     <div class="timeline-meta">
-                        <div class="timeline-date">March 2025</div>
+                        <div class="timeline-date">11th September 2024</div>
                         <div class="status-badge">Completed</div>
                     </div>
                     <div class="timeline-node"></div>
                     <div class="ref-card timeline-card">
                         <h4 class="objective-title">Project Proposal</h4>
                         <p>Initial research proposal outlining objectives, methodology, and expected outcomes.</p>
-                        <p class="timeline-marks">Marks: 15%</p>
+                        <p class="timeline-marks">Marks: 6%</p>
                     </div>
                 </div>
 
                 <div class="timeline-item left">
                     <div class="timeline-meta">
-                        <div class="timeline-date">April 2025</div>
+                        <div class="timeline-date">9th January 2025</div>
                         <div class="status-badge">Completed</div>
                     </div>
                     <div class="timeline-node"></div>
                     <div class="ref-card timeline-card">
                         <h4 class="objective-title">Progress Presentation I</h4>
                         <p>First progress review covering literature survey and preliminary findings.</p>
-                        <p class="timeline-marks">Marks: 20%</p>
+                        <p class="timeline-marks">Marks: 15%</p>
                     </div>
                 </div>
 
                 <div class="timeline-item right">
                     <div class="timeline-meta">
-                        <div class="timeline-date">May 2025</div>
+                        <div class="timeline-date">10th March 2025</div>
                         <div class="status-badge">Completed</div>
                     </div>
                     <div class="timeline-node"></div>
                     <div class="ref-card timeline-card">
                         <h4 class="objective-title">Progress Presentation II</h4>
                         <p>Second progress review with data collection results and analysis.</p>
-                        <p class="timeline-marks">Marks: 25%</p>
+                        <p class="timeline-marks">Marks: 18%</p>
                     </div>
                 </div>
 
                 <div class="timeline-item left">
                     <div class="timeline-meta">
-                        <div class="timeline-date">June 2025</div>
-                        <div class="status-badge">Completed</div>
-                    </div>
-                    <div class="timeline-node"></div>
-                    <div class="ref-card timeline-card">
-                        <h4 class="objective-title">Research Paper</h4>
-                        <p>Submission of the final research paper detailing the project, findings, and conclusions.</p>
-                        <p class="timeline-marks">Marks: N/A</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item right">
-                    <div class="timeline-meta">
-                        <div class="timeline-date">June 2025</div>
-                        <div class="status-badge">Completed</div>
-                    </div>
-                    <div class="timeline-node"></div>
-                    <div class="ref-card timeline-card">
-                        <h4 class="objective-title">Final Report</h4>
-                        <p>Submission of the comprehensive final report document.</p>
-                        <p class="timeline-marks">Marks: N/A</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item left">
-                    <div class="timeline-meta">
-                        <div class="timeline-date">June 2025</div>
-                        <div class="status-badge">Completed</div>
+                        <div class="timeline-date">27th April 2025</div>
+                        <div class="status-badge ongoing-badge">Ongoing</div>
                     </div>
                     <div class="timeline-node"></div>
                     <div class="ref-card timeline-card">
                         <h4 class="objective-title">Website Assessment</h4>
                         <p>Assessment of the research project website.</p>
-                        <p class="timeline-marks">Marks: N/A</p>
+                        <p class="timeline-marks">Marks: 2%</p>
                     </div>
                 </div>
 
                 <div class="timeline-item right">
                     <div class="timeline-meta">
-                        <div class="timeline-date">July 2025</div>
-                        <div class="status-badge">Completed</div>
+                        <div class="timeline-date">5th May 2025</div>
+                        <div class="status-badge ongoing-badge">Ongoing</div>
                     </div>
                     <div class="timeline-node"></div>
                     <div class="ref-card timeline-card">
-                        <h4 class="objective-title">Final Presentation & Viva</h4>
+                        <h4 class="objective-title">Final Presentation &amp; Viva</h4>
                         <p>Final presentation and oral defense of the research findings and project.</p>
-                        <p class="timeline-marks">Marks: 40%</p>
+                        <p class="timeline-marks">Marks: 20%</p>
                     </div>
                 </div>
 
                 <div class="timeline-item left">
                     <div class="timeline-meta">
+                        <div class="timeline-date">8th May 2025</div>
+                        <div class="status-badge ongoing-badge">Ongoing</div>
+                    </div>
+                    <div class="timeline-node"></div>
+                    <div class="ref-card timeline-card">
+                        <h4 class="objective-title">Research Paper</h4>
+                        <p>Submission of the final research paper detailing the project, findings, and conclusions.</p>
+                        <p class="timeline-marks">Marks: 10%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-meta">
+                        <div class="timeline-date">13th May 2025</div>
+                        <div class="status-badge ongoing-badge">Ongoing</div>
+                    </div>
+                    <div class="timeline-node"></div>
+                    <div class="ref-card timeline-card">
+                        <h4 class="objective-title">Final Report</h4>
+                        <p>Submission of the comprehensive final report document.</p>
+                        <p class="timeline-marks">Marks: 4%</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-meta">
                         <div class="timeline-date">Ongoing</div>
-                        <div class="status-badge">Completed</div>
+                        <div class="status-badge ongoing-badge">Ongoing</div>
                     </div>
                     <div class="timeline-node"></div>
                     <div class="ref-card timeline-card">
@@ -525,7 +536,6 @@
                     <div class="doc-file-box">
                         <div class="file-info">
                             <span class="file-name">Topic Assessment Form.pdf</span>
-                            <span class="file-size">322 KB</span>
                         </div>
                         <a href="resources/TAF_document.pdf" target="_blank" class="btn file-view-btn"><i class="fa-regular fa-eye"></i> View</a>
                     </div>
@@ -537,7 +547,7 @@
                             <i class="fa-regular fa-file-lines fa-xl doc-icon"></i>
                             <div>
                                 <h4 class="doc-title">Proposal Documents</h4>
-                                <p class="doc-desc">Research proposal documents outlining the full architecture</p>
+                                <p class="doc-desc">Individual research proposal documents for each team member</p>
                             </div>
                         </div>
                         <div class="status-badge style-dark">Available</div>
@@ -545,10 +555,27 @@
                     <div class="doc-file-group">
                         <div class="doc-file-box">
                             <div class="file-info">
-                                <span class="file-name">Proposal Document - TEAI Full.pdf</span>
-                                <span class="file-size">2.1 MB</span>
+                                <span class="file-name">IT22211996 – Proposal Report</span>
                             </div>
-                            <a href="#" class="btn file-view-btn"><i class="fa-regular fa-eye"></i> View</a>
+                            <a href="resources/IT22211996%20-%2025-26J-292%20RP.pdf" target="_blank" class="btn file-view-btn"><i class="fa-regular fa-eye"></i> View</a>
+                        </div>
+                        <div class="doc-file-box">
+                            <div class="file-info">
+                                <span class="file-name">IT22223326 – Proposal Report</span>
+                            </div>
+                            <a href="resources/IT22223326%20-%2025-26J-292%20RP%20(1).pdf" target="_blank" class="btn file-view-btn"><i class="fa-regular fa-eye"></i> View</a>
+                        </div>
+                        <div class="doc-file-box">
+                            <div class="file-info">
+                                <span class="file-name">IT22224248 – Proposal Report</span>
+                            </div>
+                            <a href="resources/IT22224248%20-%2025-26J-292%20RP%20(1).pdf" target="_blank" class="btn file-view-btn"><i class="fa-regular fa-eye"></i> View</a>
+                        </div>
+                        <div class="doc-file-box">
+                            <div class="file-info">
+                                <span class="file-name">IT22254702 – Proposal Report</span>
+                            </div>
+                            <a href="resources/IT22254702%20-%2025-26J-292%20RP%20(1).pdf" target="_blank" class="btn file-view-btn"><i class="fa-regular fa-eye"></i> View</a>
                         </div>
                     </div>
                 </div>
@@ -564,12 +591,19 @@
                         </div>
                         <div class="status-badge style-dark">Available</div>
                     </div>
-                    <div class="doc-file-box">
-                        <div class="file-info">
-                            <span class="file-name">Research Checklist.pdf</span>
-                            <span class="file-size">450 KB</span>
+                    <div class="doc-file-group">
+                        <div class="doc-file-box">
+                            <div class="file-info">
+                                <span class="file-name">Checklist Document 1</span>
+                            </div>
+                            <a href="resources/README.md" target="_blank" class="btn file-view-btn"><i class="fa-regular fa-eye"></i> View</a>
                         </div>
-                        <a href="#" class="btn file-view-btn"><i class="fa-regular fa-eye"></i> View</a>
+                        <div class="doc-file-box">
+                            <div class="file-info">
+                                <span class="file-name">Checklist Document 2</span>
+                            </div>
+                            <a href="resources/check_list_2.pdf" target="_blank" class="btn file-view-btn"><i class="fa-regular fa-eye"></i> View</a>
+                        </div>
                     </div>
                 </div>
 
@@ -587,7 +621,6 @@
                     <div class="doc-file-box">
                         <div class="file-info">
                             <span class="file-name">TEAI Final Project Report.pdf</span>
-                            <span class="file-size">5.2 MB</span>
                         </div>
                         <a href="#" class="btn file-view-btn"><i class="fa-regular fa-eye"></i> View</a>
                     </div>
@@ -607,7 +640,6 @@
                     <div class="doc-file-box">
                         <div class="file-info">
                             <span class="file-name">TEAI Research Paper.pdf</span>
-                            <span class="file-size">1.8 MB</span>
                         </div>
                         <a href="#" class="btn file-view-btn"><i class="fa-regular fa-eye"></i> View</a>
                     </div>
@@ -631,7 +663,7 @@
                         <span class="status-badge style-dark">Completed</span>
                     </div>
                     <h4 class="objective-title">Proposal Presentation</h4>
-                    <p class="pres-meta">March 15, 2025 &bull; 25 slides &bull; 20 minutes</p>
+                    <p class="pres-meta">11th September 2024</p>
                     <p class="pres-desc">Initial project proposal and research methodology overview</p>
                     <a href="resources/TEAI_PROPOSAL.pdf" target="_blank" class="btn black-sub-btn"><i class="fa-solid fa-download"></i> View Slides</a>
                 </div>
@@ -642,7 +674,7 @@
                         <span class="status-badge style-dark">Completed</span>
                     </div>
                     <h4 class="objective-title">Progress Presentation 1</h4>
-                    <p class="pres-meta">April 20, 2025 &bull; 30 slides &bull; 25 minutes</p>
+                    <p class="pres-meta">9th January 2025</p>
                     <p class="pres-desc">Literature review findings and preliminary data collection</p>
                     <a href="resources/TEAI_PP1.pdf" target="_blank" class="btn black-sub-btn"><i class="fa-solid fa-download"></i> View Slides</a>
                 </div>
@@ -653,7 +685,7 @@
                         <span class="status-badge style-dark">Completed</span>
                     </div>
                     <h4 class="objective-title">Progress Presentation 2</h4>
-                    <p class="pres-meta">May 25, 2025 &bull; 35 slides &bull; 30 minutes</p>
+                    <p class="pres-meta">10th March 2025</p>
                     <p class="pres-desc">Data analysis results and initial findings discussion</p>
                     <a href="resources/TEAI_PP2.pdf" target="_blank" class="btn black-sub-btn"><i class="fa-solid fa-download"></i> View Slides</a>
                 </div>
@@ -661,10 +693,10 @@
                 <div class="ref-card presentation-card">
                     <div class="pres-header">
                         <i class="fa-solid fa-desktop pres-icon"></i>
-                        <span class="status-badge style-dark">Completed</span>
+                        <span class="status-badge style-dark ongoing-badge">Ongoing</span>
                     </div>
                     <h4 class="objective-title">Final Presentation</h4>
-                    <p class="pres-meta">June 30, 2025 &bull; 40 slides &bull; 35 minutes</p>
+                    <p class="pres-meta">May 5, 2025</p>
                     <p class="pres-desc">Complete research findings, conclusions, and recommendations</p>
                     <a href="#" class="btn black-sub-btn"><i class="fa-solid fa-download"></i> View Slides</a>
                 </div>
@@ -681,16 +713,26 @@
                 <p class="section-subtitle" style="margin-bottom: 3rem;">Meet the dedicated research team working on
                     automating tea quality with AI.</p>
 
-                <!-- Supervisor (1 Card Center) -->
-                <div class="team-grid supervisor-row">
+                <!-- Supervisors Row (2 Cards Centered) -->
+                <div class="team-grid supervisors-row">
                     <div class="ref-card team-member">
                         <div class="avatar avatar-sup"></div>
                         <h3>Dr. Nathali de Silva</h3>
                         <p class="role">Supervisor</p>
                         <p class="school">Faculty of Computing | Information Technology</p>
                         <div class="team-links">
-                            <a href="#"><i class="fa-regular fa-envelope"></i> Email</a>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                            <a href="mailto:nathali.s@sliit.lk"><i class="fa-regular fa-envelope"></i> Email</a>
+                            <a href="https://www.linkedin.com/in/bhagya-nathali-silva-8ab73524" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="ref-card team-member">
+                        <div class="avatar avatar-cosup"></div>
+                        <h3>Ms. Shashini Kumarasinghe</h3>
+                        <p class="role">Co-Supervisor</p>
+                        <p class="school">Faculty of Computing</p>
+                        <div class="team-links">
+                            <a href="mailto:shashini.ku@sliit.lk"><i class="fa-regular fa-envelope"></i> Email</a>
+                            <a href="https://www.linkedin.com/in/shashini-kumarasinghe-05a8aa1a3" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                         </div>
                     </div>
                 </div>
@@ -703,8 +745,8 @@
                         <p class="role">Vision-Based Tea Taster</p>
                         <p class="id">IT22223326</p>
                         <div class="team-links">
-                            <a href="#"><i class="fa-regular fa-envelope"></i> Email</a>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                            <a href="mailto:semaldesilva2002@gmail.com"><i class="fa-regular fa-envelope"></i> Email</a>
+                            <a href="https://www.linkedin.com/in/semal-desilva-07467b224" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                         </div>
                     </div>
                     <div class="ref-card team-member">
@@ -713,8 +755,8 @@
                         <p class="role">Plucking Quality Grading</p>
                         <p class="id">IT22224248</p>
                         <div class="team-links">
-                            <a href="#"><i class="fa-regular fa-envelope"></i> Email</a>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                            <a href="mailto:vidulashavinda12@gmail.com"><i class="fa-regular fa-envelope"></i> Email</a>
+                            <a href="https://www.linkedin.com/in/vidula-gunasekara-b8223831a" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                         </div>
                     </div>
                     <div class="ref-card team-member">
@@ -723,8 +765,8 @@
                         <p class="role">Withering Moisture Time</p>
                         <p class="id">IT22254702</p>
                         <div class="team-links">
-                            <a href="#"><i class="fa-regular fa-envelope"></i> Email</a>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                            <a href="mailto:navindu.ds01@gmail.com"><i class="fa-regular fa-envelope"></i> Email</a>
+                            <a href="https://www.linkedin.com/in/navindus" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                         </div>
                     </div>
                     <div class="ref-card team-member">
@@ -733,8 +775,8 @@
                         <p class="role">Foreign Particle Detection</p>
                         <p class="id">IT22211996</p>
                         <div class="team-links">
-                            <a href="#"><i class="fa-regular fa-envelope"></i> Email</a>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                            <a href="mailto:sachithnimaliyanage@gmail.com"><i class="fa-regular fa-envelope"></i> Email</a>
+                            <a href="https://www.linkedin.com/in/sachith-liyanage-397a462b2" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                         </div>
                     </div>
                 </div>
@@ -794,6 +836,11 @@
             </div>
         </div>
     </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to top" aria-label="Back to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
